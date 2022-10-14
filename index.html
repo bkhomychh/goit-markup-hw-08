@@ -189,10 +189,10 @@
             <li class="list__item">
               <img
                 srcset="
-                  ./images/desktop/studio/our-work/development.jpg    1x,
-                  ./images/desktop/studio/our-work/development@2x.jpg 2x
+                  ./images/studio/our-work/development.jpg    1x,
+                  ./images/studio/our-work/development@2x.jpg 2x
                 "
-                src="./images/desktop/studio/our-work/development.jpg"
+                src="./images/studio/our-work/development.jpg"
                 width="370"
                 height="294"
                 alt="Розробка веб-сайтів"
@@ -202,10 +202,10 @@
             <li class="list__item">
               <img
                 srcset="
-                  ./images/desktop/studio/our-work/testing.jpg    1x,
-                  ./images/desktop/studio/our-work/testing@2x.jpg 2x
+                  ./images/studio/our-work/testing.jpg    1x,
+                  ./images/studio/our-work/testing@2x.jpg 2x
                 "
-                src="./images/desktop/studio/our-work/testing.jpg"
+                src="./images/studio/our-work/testing.jpg"
                 width="370"
                 height="294"
                 alt="Тестування веб-сайтів"
@@ -215,10 +215,10 @@
             <li class="list__item">
               <img
                 srcset="
-                  ./images/desktop/studio/our-work/design.jpg    1x,
-                  ./images/desktop/studio/our-work/design@2x.jpg 2x
+                  ./images/studio/our-work/design.jpg    1x,
+                  ./images/studio/our-work/design@2x.jpg 2x
                 "
-                src="./images/desktop/studio/our-work/design.jpg"
+                src="./images/studio/our-work/design.jpg"
                 width="370"
                 height="294"
                 alt="Створення дизайну веб-сайтів"
@@ -235,13 +235,35 @@
           <h2 class="title">Наша команда</h2>
           <ul class="card-set">
             <li class="card-set__item">
-              <img
-                class="card-set__img"
-                src="./images/studio/team/ihor.jpg"
-                width="270"
-                height="260"
-                alt="Ігор Дем'яненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/team/member-1-desk.jpg    1x,
+                    ./images/studio/team/member-1-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/team/member-1-tab.jpg    1x,
+                    ./images/studio/team/member-1-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/team/member-1-mob.jpg    1x,
+                    ./images/studio/team/member-1-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="card-set__img"
+                  src="./images/studio/team/member-1-mob.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
+
               <h3 class="card-set__title">Ігор Дем'яненко</h3>
               <p class="card-set__subtitle">Product Designer</p>
 
@@ -297,13 +319,35 @@
               </ul>
             </li>
             <li class="card-set__item">
-              <img
-                class="card-set__img"
-                src="./images/studio/team/olha.jpg"
-                width="270"
-                height="260"
-                alt="Ольга Рєпіна"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/team/member-2-desk.jpg    1x,
+                    ./images/studio/team/member-2-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/team/member-2-tab.jpg    1x,
+                    ./images/studio/team/member-2-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/team/member-2-mob.jpg    1x,
+                    ./images/studio/team/member-2-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="card-set__img"
+                  src="./images/studio/team/member-2-mob.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
+
               <h3 class="card-set__title">Ольга Рєпіна</h3>
               <p class="card-set__subtitle">Frontend Developer</p>
               <ul class="socials">
@@ -358,13 +402,35 @@
               </ul>
             </li>
             <li class="card-set__item">
-              <img
-                class="card-set__img"
-                src="./images/studio/team/mykola.jpg"
-                width="270"
-                height="260"
-                alt="Микола Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/team/member-3-desk.jpg    1x,
+                    ./images/studio/team/member-3-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/team/member-3-tab.jpg    1x,
+                    ./images/studio/team/member-3-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/team/member-3-mob.jpg    1x,
+                    ./images/studio/team/member-3-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="card-set__img"
+                  src="./images/studio/team/member-3-mob.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
+
               <h3 class="card-set__title">Микола Тарасов</h3>
               <p class="card-set__subtitle">Marketing</p>
               <ul class="socials">
@@ -419,13 +485,35 @@
               </ul>
             </li>
             <li class="card-set__item">
-              <img
-                class="card-set__img"
-                src="./images/studio/team/mykhailo.jpg"
-                width="270"
-                height="260"
-                alt="Михайло Єрмаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/team/member-4-desk.jpg    1x,
+                    ./images/studio/team/member-4-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/team/member-4-tab.jpg    1x,
+                    ./images/studio/team/member-4-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/team/member-4-mob.jpg    1x,
+                    ./images/studio/team/member-4-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="card-set__img"
+                  src="./images/studio/team/member-4-mob.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
+
               <h3 class="card-set__title">Михайло Єрмаков</h3>
               <p class="card-set__subtitle">UI Designer</p>
               <ul class="socials">
@@ -675,7 +763,7 @@
             </div>
           </label>
 
-          <label class="form__field from__field--expanded">
+          <label class="form__field form__field--expanded">
             <span class="form__label">Коментар</span>
             <textarea
               class="form__input form__input--large"

@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 
   width: 100vw;
   height: 100vh;
@@ -30,7 +31,8 @@
     @media screen and (min-width: $mobile) {
       transform: translate(-50%, 0) scale(0.75);
     }
-    @media screen and (min-width: $desktop) {
+
+    @media screen and (min-width: $tablet) and (min-height: 768px) {
       transform: translate(-50%, -50%) scale(0.75);
     }
   }
@@ -43,7 +45,7 @@
     max-width: 450px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (min-height: 768px) {
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
   }

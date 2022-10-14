@@ -4,14 +4,23 @@
 .gallery__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * $gap-size);
-  margin-left: calc(-1 * $gap-size);
+  margin: calc($gap-size / 2 * -1);
 }
 
 .gallery__item {
-  margin-top: $gap-size;
-  margin-left: $gap-size;
-  flex-basis: calc((100% / 3 - $gap-size));
+  margin: ($gap-size / 2);
+  $items-amount: 1;
+  flex-basis: calc((100% - $gap-size * $items-amount) / $items-amount);
+
+  @media screen and (min-width: $tablet) {
+    $items-amount: 2;
+    flex-basis: calc((100% - $gap-size * $items-amount) / $items-amount);
+  }
+
+  @media screen and (min-width: $desktop) {
+    $items-amount: 3;
+    flex-basis: calc((100% - $gap-size * $items-amount) / $items-amount);
+  }
 }
 
 .gallery__card {

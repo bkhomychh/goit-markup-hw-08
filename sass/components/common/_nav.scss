@@ -8,8 +8,13 @@
   padding: 16px 0;
 
   @media screen and (min-width: $tablet) {
-    padding: 25px 0;
+    padding: 26px 0;
     margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 25px 0;
+    margin-right: 93px;
   }
 }
 
