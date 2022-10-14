@@ -288,7 +288,7 @@ img {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -359,7 +359,7 @@ body {
     display: flex;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -375,7 +375,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header__contact {
     margin-right: 50px;
   }
@@ -447,7 +447,7 @@ body {
 .logo__accent {
   color: #2196f3;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
   }
@@ -626,21 +626,37 @@ body {
   padding: 118px 0;
   text-align: center;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/studio/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/studio/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/studio/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/studio/hero@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/studio/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/studio/hero.jpg);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/studio/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/studio/hero@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
     padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/studio/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/studio/hero@2x.jpg);
   }
 }
 
@@ -655,7 +671,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     max-width: 696px;
     font-size: 44px;
@@ -666,7 +682,7 @@ body {
 .hero__btn {
   padding: 10px 24px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__btn {
     padding: 10px 32px;
   }
@@ -701,7 +717,7 @@ body {
 .section {
   padding: 60px 0;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
@@ -720,7 +736,7 @@ body {
   font-weight: 700;
   text-align: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -730,7 +746,7 @@ body {
 .features {
   padding: 60px 0;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .features {
     padding: 94px 0 0;
   }
@@ -742,7 +758,7 @@ body {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
@@ -752,7 +768,7 @@ body {
 .activity {
   display: none;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .activity {
     display: block;
   }
@@ -846,7 +862,7 @@ body {
         flex-basis: calc((100% - 60px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .card-set__item {
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
@@ -947,7 +963,7 @@ body {
         flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 150px) / 6);
         flex-basis: calc((100% - 150px) / 6);
@@ -970,7 +986,7 @@ body {
   background-color: #2f303a;
   text-align: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer {
     text-align: start;
   }
@@ -999,7 +1015,7 @@ body {
 .footer__wrap:not(:last-child) {
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__wrap:not(:last-child) {
     margin-bottom: 0;
   }
@@ -1011,13 +1027,13 @@ body {
             flex-grow: 1;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__wrap {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__wrap:nth-child(1) {
     margin-right: 70px;
   }
@@ -1031,7 +1047,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__address {
     width: 231px;
   }
@@ -1053,7 +1069,7 @@ body {
   line-height: 1.71;
   color: #ffffff;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1079,7 +1095,7 @@ body {
   margin: 9px 0;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .mailing__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1138,7 +1154,7 @@ body {
   letter-spacing: inherit;
   color: inherit;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .mailing__email {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -1201,7 +1217,7 @@ body {
             transform: translate(-50%, 0) scale(0.75);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .is-hidden .modal {
     -webkit-transform: translate(-50%, -50%) scale(0.75);
             transform: translate(-50%, -50%) scale(0.75);
@@ -1223,7 +1239,7 @@ body {
             transform: translate(-50%, -50%) scale(1);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
   }
@@ -1273,7 +1289,7 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .form__title {
     line-height: 1.15;
   }
@@ -1339,7 +1355,7 @@ body {
 .form__field:focus-within .form__input {
   border-color: #2196f3;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .form__input {
     font-size: 12px;
   }
@@ -1378,7 +1394,7 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .form__contract {
     font-size: 14px;
     line-height: 1.71;

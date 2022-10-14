@@ -12,7 +12,7 @@
 
   color: $primary-color;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     line-height: (23 / 20);
   }
 }
@@ -66,7 +66,7 @@
     border-color: $accent-color;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     font-size: 12px;
   }
 }
@@ -99,7 +99,7 @@
 
   color: $secondary-color;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.71;
   }

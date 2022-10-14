@@ -15,12 +15,12 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: $card-set-shadow;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     $items-amount: 2;
     flex-basis: calc((100% - $gap-size * $items-amount) / $items-amount);
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     $items-amount: 4;
     flex-basis: calc((100% - $gap-size * $items-amount) / $items-amount);
   }

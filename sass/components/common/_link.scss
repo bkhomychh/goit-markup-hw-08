@@ -18,7 +18,7 @@
   }
 
   &--current::after {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       position: absolute;
       left: 0;
       bottom: -1px;

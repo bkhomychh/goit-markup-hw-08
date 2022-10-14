@@ -7,7 +7,7 @@
 .nav__logo {
   padding: 16px 0;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 25px 0;
     margin-right: 88px;
   }
@@ -16,14 +16,14 @@
 .nav__list {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     height: 100%;
   }
 }
 
 .nav__item {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     position: relative;
 

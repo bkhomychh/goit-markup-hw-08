@@ -1,5 +1,5 @@
 .address {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     @include flex($fd: column, $ai: flex-start);
   }
 

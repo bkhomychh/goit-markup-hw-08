@@ -4,13 +4,13 @@
 
   text-align: center;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     text-align: start;
   }
 }
 
 .footer__container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     @include flex($ai: baseline);
     flex-wrap: wrap;
   }
@@ -20,22 +20,22 @@
   &:not(:last-child) {
     margin-bottom: 60px;
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 0;
     }
   }
 
   &:nth-child(3) {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       flex-grow: 1;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
     flex-basis: 50%;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     &:nth-child(1) {
       margin-right: 70px;
     }
@@ -51,7 +51,7 @@
 }
 
 .footer__address {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     width: 231px;
   }
 }

@@ -2,7 +2,7 @@
 }
 
 .mailing__inner {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
@@ -32,7 +32,7 @@
     color: inherit;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     flex-grow: 1;
     margin: 0 12px 0 0;
   }

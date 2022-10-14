@@ -1,5 +1,5 @@
 .list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -21,7 +21,7 @@
 }
 
 .list__title {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: ($tablet - 1)) {
     text-align: center;
   }
 

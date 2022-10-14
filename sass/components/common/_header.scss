@@ -11,7 +11,7 @@
 }
 
 .header__container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
@@ -20,11 +20,11 @@
   display: none;
   margin-left: auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -33,13 +33,13 @@
 }
 
 .header__contact {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 50px;
   }
 }
 
 .header__icon {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 10px;
     fill: currentColor;
   }
