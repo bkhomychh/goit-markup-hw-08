@@ -63,7 +63,7 @@
 
   background-color: $overlay-background-color;
 
-  transform: translateY(100%);
+  transform: translateY(105%);
   transition: transform 250ms $primary-cubic-bezier;
 
   .gallery__card:hover &,
