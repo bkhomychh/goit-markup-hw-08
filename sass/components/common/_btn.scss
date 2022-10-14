@@ -1,0 +1,27 @@
+.btn {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  color: $tertiary-color;
+
+  background-color: $accent-color;
+  box-shadow: $btn-shadow;
+
+  transition: background-color 250ms $primary-cubic-bezier;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-background-color;
+  }
+}
+
+.btn__icon {
+  display: inline-flex;
+
+  &--end {
+    margin-left: 10px;
+  }
+}

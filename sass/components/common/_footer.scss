@@ -1,0 +1,41 @@
+.footer {
+  padding: 60px 0;
+  background-color: $primary-background-color;
+}
+
+.footer__container {
+  @include flex($ai: baseline);
+}
+
+.footer__wrap {
+  &:nth-child(1) {
+    margin-right: 70px;
+  }
+  &:nth-child(2) {
+    margin-right: 95px;
+  }
+  &:nth-child(3) {
+    flex-grow: 1;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__address {
+  width: 231px;
+}
+
+.footer__call {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $tertiary-color;
+}

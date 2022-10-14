@@ -1,0 +1,31 @@
+$primary-color: #212121;
+$accent-color: #2196f3;
+$secondary-color: #757575;
+$tertiary-color: #ffffff;
+$quaternary-color: rgba(255, 255, 255, 0.6);
+
+$primary-background-color: #2f303a;
+$accent-background-color: #188ce8;
+$secondary-background-color: #f5f4fa;
+$overlay-background-color: rgba(33, 150, 243, 0.9);
+$backdrop-background-color: rgba(0, 0, 0, 0.2);
+$background-overlay: rgba(47, 48, 58, 0.8);
+$fill-color: #afb1b8;
+
+$btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$card-set-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+$gallery-item-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+$modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$items-amount: 4;
+$gap-size: 30px;
+
+$primary-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+$primary-font-family: 'Roboto', sans-serif;
+$secondary-font-family: 'Raleway', sans-serif;

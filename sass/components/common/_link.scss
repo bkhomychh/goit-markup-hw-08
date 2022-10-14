@@ -1,0 +1,32 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondary-color;
+
+  transition: color 250ms $primary-cubic-bezier;
+
+  &:hover,
+  &:focus,
+  &--current {
+    color: $accent-color;
+  }
+
+  &--current::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}

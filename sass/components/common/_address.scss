@@ -1,0 +1,17 @@
+.address {
+  @include flex($fd: column, $ai: flex-start);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $tertiary-color;
+}
+
+.address__link {
+  line-height: 1.71;
+  color: $quaternary-color;
+
+  &--expanded {
+    margin: 9px 0;
+  }
+}

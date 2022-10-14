@@ -1,0 +1,35 @@
+.card-set {
+  display: flex;
+
+  &__item {
+    padding-bottom: 30px;
+    background: $tertiary-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: $card-set-shadow;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    line-height: 1.19;
+    text-align: center;
+    color: $secondary-color;
+  }
+}

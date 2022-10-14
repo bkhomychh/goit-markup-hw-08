@@ -1,0 +1,11 @@
+.section {
+  padding: 94px 0;
+
+  &--light {
+    background-color: $tertiary-color;
+  }
+
+  &--dark {
+    background-color: $secondary-background-color;
+  }
+}

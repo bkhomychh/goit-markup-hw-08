@@ -1,0 +1,42 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: $tertiary-color;
+
+  &__container {
+    display: flex;
+  }
+  &__contacts {
+    display: flex;
+    margin-left: auto;
+  }
+  &__contact {
+    margin-right: 50px;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.nav {
+  display: flex;
+
+  &__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+
+  &__list {
+    display: flex;
+  }
+  
+  &__item {
+    display: flex;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}

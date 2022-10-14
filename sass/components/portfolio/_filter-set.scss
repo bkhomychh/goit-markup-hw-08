@@ -1,0 +1,31 @@
+.filter-set {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filter-set__btn {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: $primary-color;
+
+  border-radius: 4px;
+  background-color: $secondary-background-color;
+
+  transition: color 250ms $primary-cubic-bezier, background-color 250ms $primary-cubic-bezier,
+    box-shadow 250ms $primary-cubic-bezier;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $tertiary-color;
+    background-color: $accent-color;
+    box-shadow: $button-shadow;
+  }
+}

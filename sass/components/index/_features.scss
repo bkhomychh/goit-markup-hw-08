@@ -1,0 +1,7 @@
+.features {
+  padding-top: 94px;
+
+  &__item {
+    flex-basis: calc((100% - ($items-amount - 1) * $gap-size) / $items-amount);
+  }
+}

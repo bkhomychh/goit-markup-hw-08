@@ -1,0 +1,14 @@
+.logo {
+  font-family: $secondary-font-family;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: $primary-color;
+
+  &--inverse {
+    color: $tertiary-color;
+  }
+  &__accent {
+    color: $accent-color;
+  }
+}

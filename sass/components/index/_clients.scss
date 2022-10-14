@@ -1,0 +1,24 @@
+.clients {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-size;
+  }
+
+  &__item {
+    $items-amount: 6;
+    flex-basis: calc((100% - ($items-amount - 1) * $gap-size) / $items-amount);
+  }
+
+  &__link {
+    padding: 16px 0;
+
+    color: $fill-color;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
