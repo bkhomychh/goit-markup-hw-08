@@ -1,0 +1,16 @@
+.toggle {
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.toggle__icon {
+  fill: currentColor;
+}

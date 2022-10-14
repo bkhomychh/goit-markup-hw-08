@@ -1,7 +1,17 @@
 .features {
-  padding-top: 94px;
+  padding: 60px 0;
 
-  &__item {
-    flex-basis: calc((100% - ($items-amount - 1) * $gap-size) / $items-amount);
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
   }
+}
+
+.features__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* flex-basis: calc((100% - ($items-amount - 1) * $gap-size) / $items-amount); */
 }

@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  padding: 16px 0;
+
+  /*   padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px; */
+}
+
+.nav__list {
+  display: none;
+
+  /* 	display: flex; */
+}
+
+.nav__item {
+  /*   display: flex;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  } */
+}

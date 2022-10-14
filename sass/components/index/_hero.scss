@@ -1,8 +1,8 @@
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
+  max-width: 480px;
+
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 60px;
 
   text-align: center;
 
@@ -12,20 +12,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
 
-  &__title {
-    width: 696px;
-    margin: 0 auto 30px;
+.hero__title {
+  margin: 0 auto 30px;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $tertiary-color;
-  }
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  line-height: (42 / 26);
+  letter-spacing: 0.06em;
 
-  &__btn {
-    padding: 10px 32px;
-  }
+  text-transform: uppercase;
+  color: $tertiary-color;
+}
+
+.hero__btn {
+  padding: 10px 24px;
 }

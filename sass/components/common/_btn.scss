@@ -7,10 +7,9 @@
 
   background-color: $accent-color;
   box-shadow: $btn-shadow;
+  cursor: pointer;
 
   transition: background-color 250ms $primary-cubic-bezier;
-
-  cursor: pointer;
 
   &:hover,
   &:focus {

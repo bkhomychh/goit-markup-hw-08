@@ -5,7 +5,10 @@
 @import './utils/specific';
 
 @import './components/common/header';
+@import './components/common/nav';
 @import './components/common/logo';
+@import './components/common/toggle';
+@import './components/common/mobile-menu';
 @import './components/common/link';
 
 @import './components/index/hero';
@@ -14,6 +17,7 @@
 @import './components/common/section';
 @import './components/common/title';
 @import './components/index/features';
+@import './components/index/activity';
 @import './components/common/list';
 @import './components/index/card-set';
 @import './components/common/socials';

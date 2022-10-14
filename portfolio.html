@@ -21,6 +21,17 @@
             <span class="logo__accent">Web</span>Studio
           </a>
 
+          <button
+            class="toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="toggle__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use href="./images/icons.svg#icon-menu-open"></use>
+            </svg>
+          </button>
+
           <ul class="nav__list">
             <li class="nav__item">
               <a class="link" href="./index.html">Студія</a>
@@ -50,6 +61,65 @@
         </div>
       </div>
     </header>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="toggle mobile-menu__toggle js-close-menu" type="button">
+        <svg class="toggle__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use href="./images/icons.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">Контакти</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu__contacts">
+        <a class="mobile-menu__number" href="tel:+380961111111">+38 096 111 11 11</a>
+
+        <a class="mobile-menu__email" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+      </div>
+
+      <ul class="mobile-menu__socials">
+        <li>
+          <a
+            class="mobile-menu__social mobile-menu__social--start"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__social" href="#" target="_blank" rel="noopener noreferrer nofollow"
+            >Twitter</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__social" href="#" target="_blank" rel="noopener noreferrer nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a
+            class="mobile-menu__social mobile-menu__social--end"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
 
     <main>
       <section class="gallery section section--light">
@@ -371,5 +441,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
