@@ -2,7 +2,7 @@
   max-width: 480px;
 
   margin: 0 auto;
-  padding: 118px 60px;
+  padding: 118px 0;
 
   text-align: center;
 
@@ -12,10 +12,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 
 .hero__title {
   margin: 0 auto 30px;
+  max-width: 360px;
 
   font-weight: 900;
   font-size: 26px;
@@ -25,6 +30,10 @@
 
   text-transform: uppercase;
   color: $tertiary-color;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
 }
 
 .hero__btn {

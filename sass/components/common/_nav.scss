@@ -7,22 +7,28 @@
 .nav__logo {
   padding: 16px 0;
 
-  /*   padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px; */
+  @media screen and (min-width: 768px) {
+    padding: 25px 0;
+    margin-right: 88px;
+  }
 }
 
 .nav__list {
   display: none;
 
-  /* 	display: flex; */
+  @media screen and (min-width: 768px) {
+    display: flex;
+    height: 100%;
+  }
 }
 
 .nav__item {
-  /*   display: flex;
-  position: relative;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: relative;
 
-  &:not(:last-child) {
-    margin-right: 50px;
-  } */
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
