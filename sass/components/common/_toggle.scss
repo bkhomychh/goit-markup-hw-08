@@ -2,6 +2,7 @@
   background-color: transparent;
   cursor: pointer;
   color: $primary-color;
+  transition: color 250ms $primary-cubic-bezier;
 
   &:hover,
   &:focus {

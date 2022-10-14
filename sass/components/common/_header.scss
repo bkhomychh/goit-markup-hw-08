@@ -1,4 +1,11 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100vw;
+
   border-bottom: 1px solid #ececec;
   background-color: $tertiary-color;
 }
@@ -17,7 +24,7 @@
     display: flex;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -26,7 +33,7 @@
 }
 
 .header__contact {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     margin-right: 50px;
   }
 }

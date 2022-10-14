@@ -16,6 +16,11 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
+
+  @media screen and (min-width: 1600px) {
+    max-width: 1600px;
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
@@ -31,11 +36,17 @@
   text-transform: uppercase;
   color: $tertiary-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     max-width: 696px;
+    font-size: 44px;
+    line-height: (60 / 44);
   }
 }
 
 .hero__btn {
   padding: 10px 24px;
+
+  @media screen and (min-width: 1600px) {
+    padding: 10px 32px;
+  }
 }

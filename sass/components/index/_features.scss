@@ -1,14 +1,19 @@
 .features {
   padding: 60px 0;
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
+  @media screen and (min-width: 1600px) {
+    padding: 94px 0 0;
   }
 }
 
 .features__item {
   @media screen and (min-width: 768px) {
     $items-amount: 2;
+    flex-basis: calc((100% - ($items-amount - 1) * $gap-size) / $items-amount);
+  }
+
+  @media screen and (min-width: 1600px) {
+    $items-amount: 4;
     flex-basis: calc((100% - ($items-amount - 1) * $gap-size) / $items-amount);
   }
 }

@@ -274,12 +274,6 @@ img {
   display: block;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
-  letter-spacing: 0.03em;
-}
-
 .container {
   padding: 0 15px;
 }
@@ -294,7 +288,7 @@ body {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .container {
     max-width: 1200px;
   }
@@ -324,7 +318,24 @@ body {
   overflow: hidden;
 }
 
+body {
+  padding-top: 60px;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
 }
@@ -348,7 +359,7 @@ body {
     display: flex;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .header__contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -364,7 +375,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .header__contact {
     margin-right: 50px;
   }
@@ -425,9 +436,9 @@ body {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.1666666667;
   color: #212121;
 }
 .logo--inverse {
@@ -436,11 +447,18 @@ body {
 .logo__accent {
   color: #2196f3;
 }
+@media screen and (min-width: 1600px) {
+  .logo {
+    font-size: 26px;
+  }
+}
 
 .toggle {
   background-color: transparent;
   cursor: pointer;
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .toggle:hover, .toggle:focus {
   color: #2196f3;
@@ -456,9 +474,6 @@ body {
 }
 
 .mobile-menu {
-  display: none;
-}
-.mobile-menu.is-open {
   position: fixed;
   top: 0;
   left: 0;
@@ -474,6 +489,21 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .mobile-menu__toggle {
@@ -497,6 +527,8 @@ body {
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus, .mobile-menu__link--current {
   color: #2196f3;
@@ -605,6 +637,12 @@ body {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .hero {
+    max-width: 1600px;
+    padding: 200px 0;
+  }
+}
 
 .hero__title {
   margin: 0 auto 30px;
@@ -617,14 +655,21 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .hero__title {
     max-width: 696px;
+    font-size: 44px;
+    line-height: 1.3636363636;
   }
 }
 
 .hero__btn {
   padding: 10px 24px;
+}
+@media screen and (min-width: 1600px) {
+  .hero__btn {
+    padding: 10px 32px;
+  }
 }
 
 .btn {
@@ -656,7 +701,7 @@ body {
 .section {
   padding: 60px 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .section {
     padding: 94px 0;
   }
@@ -675,7 +720,7 @@ body {
   font-weight: 700;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -685,9 +730,9 @@ body {
 .features {
   padding: 60px 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .features {
-    padding-top: 94px;
+    padding: 94px 0 0;
   }
 }
 
@@ -697,11 +742,17 @@ body {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1600px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
 
 .activity {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .activity {
     display: block;
   }
@@ -720,9 +771,6 @@ body {
 
 .list__item {
   position: relative;
-  /*   &:not(:last-child) {
-    margin-right: $gap-size;
-  } */
 }
 
 .list__thumb {
@@ -798,7 +846,7 @@ body {
         flex-basis: calc((100% - 60px) / 2);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .card-set__item {
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
@@ -899,7 +947,7 @@ body {
         flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 150px) / 6);
         flex-basis: calc((100% - 150px) / 6);
@@ -921,6 +969,11 @@ body {
   padding: 60px 0;
   background-color: #2f303a;
   text-align: center;
+}
+@media screen and (min-width: 1600px) {
+  .footer {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -946,6 +999,11 @@ body {
 .footer__wrap:not(:last-child) {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1600px) {
+  .footer__wrap:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__wrap:nth-child(3) {
     -webkit-box-flex: 1;
@@ -953,13 +1011,13 @@ body {
             flex-grow: 1;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .footer__wrap {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .footer__wrap:nth-child(1) {
     margin-right: 70px;
   }
@@ -973,7 +1031,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .footer__address {
     width: 231px;
   }
@@ -995,7 +1053,7 @@ body {
   line-height: 1.71;
   color: #ffffff;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1021,7 +1079,7 @@ body {
   margin: 9px 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .mailing__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1080,12 +1138,12 @@ body {
   letter-spacing: inherit;
   color: inherit;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .mailing__email {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    margin-right: 12px;
+    margin: 0 12px 0 0;
   }
 }
 
@@ -1165,7 +1223,7 @@ body {
             transform: translate(-50%, -50%) scale(1);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .modal {
     max-width: 528px;
   }
@@ -1215,6 +1273,11 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 1600px) {
+  .form__title {
+    line-height: 1.15;
+  }
+}
 
 .form__field {
   display: -webkit-box;
@@ -1246,6 +1309,7 @@ body {
   width: 100%;
   height: 40px;
   padding: 0px 42px;
+  font-size: 14px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -1274,6 +1338,11 @@ body {
 }
 .form__field:focus-within .form__input {
   border-color: #2196f3;
+}
+@media screen and (min-width: 1600px) {
+  .form__input {
+    font-size: 12px;
+  }
 }
 
 .form__icon {
@@ -1309,7 +1378,7 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .form__contract {
     font-size: 14px;
     line-height: 1.71;
