@@ -1,4 +1,6 @@
 .backdrop {
+  padding: 93px 15px 0;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -7,26 +9,36 @@
   height: 100vh;
 
   background-color: $backdrop-background-color;
-
+  overflow-y: scroll;
   transition: opacity 250ms $primary-cubic-bezier;
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
+  position: relative;
   padding: 40px;
-  width: 528px;
+  width: 100%;
+
   box-shadow: $modal-shadow;
   border-radius: 4px;
   background-color: $tertiary-color;
 
-  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $primary-cubic-bezier, visibility 250ms $primary-cubic-bezier;
 
   .is-hidden & {
     transform: translate(-50%, -50%) scale(0.75);
+  }
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
   }
 }
 
@@ -40,6 +52,7 @@
   width: 30px;
   height: 30px;
 
+  color: $primary-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
@@ -49,6 +62,10 @@
 
   &:hover,
   &:focus {
-    fill: $accent-color;
+    color: $accent-color;
   }
+}
+
+.modal__icon-cross {
+  fill: currentColor;
 }

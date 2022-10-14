@@ -340,7 +340,7 @@ body {
 }
 
 .header__contact {
-  /*  margin-right: 50px; */
+  /*   margin-right: 50px; */
 }
 
 .header__icon {
@@ -398,8 +398,9 @@ body {
 .toggle {
   background-color: transparent;
   cursor: pointer;
+  color: #212121;
 }
-.toggle:hover {
+.toggle:hover, .toggle:focus {
   color: #2196f3;
 }
 @media (min-width: 768px) {
@@ -1016,28 +1017,26 @@ body {
 }
 
 .backdrop {
+  padding: 93px 15px 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   padding: 40px;
-  width: 528px;
+  width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #ffffff;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
   -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1046,6 +1045,21 @@ body {
 .is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.75);
           transform: translate(-50%, -50%) scale(0.75);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .modal__btn {
@@ -1067,6 +1081,7 @@ body {
   right: 8px;
   width: 30px;
   height: 30px;
+  color: #212121;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
@@ -1075,14 +1090,18 @@ body {
   cursor: pointer;
 }
 .modal__btn:hover, .modal__btn:focus {
-  fill: #2196f3;
+  color: #2196f3;
+}
+
+.modal__icon-cross {
+  fill: currentColor;
 }
 
 .form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -1098,7 +1117,7 @@ body {
           flex-direction: column;
   margin-bottom: 10px;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -1175,11 +1194,17 @@ body {
 }
 
 .form__contract {
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.71;
+  /* text-align: center; */
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .form__contract {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__link {

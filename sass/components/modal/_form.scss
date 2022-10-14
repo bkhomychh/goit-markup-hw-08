@@ -6,7 +6,7 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: (30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -19,7 +19,7 @@
   margin-bottom: 10px;
 
   font-size: 12px;
-  line-height: 1.17;
+  line-height: (14 / 12);
   letter-spacing: 0.01em;
 
   color: $secondary-color;
@@ -83,12 +83,17 @@
 }
 
 .form__contract {
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.71;
+  /* text-align: center; */
+  font-size: 12px;
+  line-height: (14 / 12);
   letter-spacing: 0.03em;
 
   color: $secondary-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__link {

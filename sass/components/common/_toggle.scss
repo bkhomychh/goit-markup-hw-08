@@ -1,8 +1,10 @@
 .toggle {
   background-color: transparent;
   cursor: pointer;
+  color: $primary-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 
