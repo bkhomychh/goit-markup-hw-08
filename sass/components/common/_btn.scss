@@ -1,5 +1,7 @@
 .btn {
   font-weight: 700;
+  font-size: 3.33vw;
+
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-radius: 4px;
@@ -14,6 +16,10 @@
   &:hover,
   &:focus {
     background-color: $accent-background-color;
+  }
+
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
   }
 }
 

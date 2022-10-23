@@ -52,9 +52,7 @@
 
   width: 100%;
   height: 100%;
-  padding: 24px;
-  display: flex;
-  align-items: center;
+  padding: 77px 24px;
 
   font-size: 18px;
   line-height: 1.56;
@@ -63,8 +61,18 @@
 
   background-color: $overlay-background-color;
 
+  overflow-y: scroll;
+
   transform: translateY(105%);
   transition: transform 250ms $primary-cubic-bezier;
+
+  @media screen and (min-width: $tablet) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 63px 24px;
+  }
 
   .gallery__card:hover &,
   .gallery__card:focus & {

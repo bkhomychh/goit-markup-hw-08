@@ -5,12 +5,16 @@
   margin-bottom: 12px;
 
   font-weight: 700;
-  font-size: 20px;
+  font-size: 4vw;
   line-height: (30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $primary-color;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 20px;
+  }
 
   @media screen and (min-width: $desktop) {
     line-height: (23 / 20);
@@ -90,12 +94,12 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .form__contract {
   font-size: 12px;
-  line-height: (14 / 12);
+  line-height: (15 / 12);
   letter-spacing: 0.03em;
 
   color: $secondary-color;

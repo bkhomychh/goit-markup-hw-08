@@ -82,25 +82,25 @@
 
 .mobile-menu__socials {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.mobile-menu__social {
-  padding: 0 10px;
-
-  font-weight: 500;
-  font-size: 18px;
-  line-height: (22 / 18);
-  letter-spacing: 0.02em;
+.mobile-menu__part {
+  padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-
-  color: $accent-color;
-
-  &--start {
-    padding-left: 0;
-  }
 
   &--end {
     padding-right: 0;
     border-right: none;
   }
+}
+
+.mobile-menu__social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: (22 / 18);
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
 }

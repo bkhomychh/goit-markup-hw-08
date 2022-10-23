@@ -62,8 +62,7 @@
   top: 8px;
   right: 8px;
 
-  width: 30px;
-  height: 30px;
+  padding: 15px;
 
   color: $primary-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -80,5 +79,9 @@
 }
 
 .modal__icon-cross {
+  position: absolute;
+
+  padding: 0px;
+
   fill: currentColor;
 }

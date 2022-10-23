@@ -48,13 +48,17 @@
   max-width: 360px;
 
   font-weight: 900;
-  font-size: 26px;
+  font-size: 5.4vw;
   line-height: 42px;
   line-height: (42 / 26);
   letter-spacing: 0.06em;
 
   text-transform: uppercase;
   color: $tertiary-color;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 26px;
+  }
 
   @media screen and (min-width: $desktop) {
     max-width: 696px;
