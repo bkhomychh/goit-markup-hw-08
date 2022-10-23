@@ -1,8 +1,11 @@
 .list {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-size;
+
   @media screen and (min-width: $tablet) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
   }
 }
 
