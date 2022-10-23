@@ -61,7 +61,7 @@
 
   background-color: $overlay-background-color;
 
-  overflow-y: scroll;
+  overflow-y: auto;
 
   transform: translateY(105%);
   transition: transform 250ms $primary-cubic-bezier;

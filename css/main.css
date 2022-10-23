@@ -1535,7 +1535,7 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-transform: translateY(105%);
           transform: translateY(105%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
